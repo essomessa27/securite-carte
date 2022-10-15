@@ -1,0 +1,164 @@
+/* --- Background --- */
+body {
+    background-color:#F4F4F4;
+    min-width:320px;
+ }
+ #page-header, #content-main .menu-customer, #content-main .widget-mid {
+    background-color:#fff;
+ }
+ .widget.menu-customer > .widget-mid {
+    margin-top:0;
+ }
+ /* --- Font-Color --- */
+ html {
+     color:#546e7a;
+ }
+ h4 {
+     font-size: 0.9em;
+ }
+ /* --- HEADER --- */
+ #page-ForSubscription #page-header, #content-top {
+    display:none;
+ }
+ #page-header {
+    padding-top:1%;
+ }
+ /* --- MENU --- */
+ .widget.menu-customer ul.menu > li a, button {
+    color: #546e7a;
+ }
+ .widget.menu-customer ul.menu > li a.active {
+    border-bottom: 2px solid #6E8894;
+ }
+ .widget.menu-customer ul.menu > li a:hover {
+    border-bottom: 2px solid #546e7a;
+ }
+ /* --- MAIN CONTENT --- */
+ #page-content .title .widget-mid {
+     background-color: transparent !important;
+ }
+ /* --- FOOTER --- */ 
+ #page-ForSubscription .customer-care {
+     display:none;
+ }
+ .customer-care .widget-mid {
+     background-color: transparent !important;
+     margin-top: 2%;
+ }
+ /* --- ToolTip --- */
+ .hover-tip, [data-tooltip] {
+     color: #546e7a;
+     box-shadow: 0 0 0 1px #546e7a inset;
+ }
+ [data-tooltip]:hover, .hover-tip span.in {
+     background: #546e7a;
+     border-color: #546e7a;
+ }
+ [data-tooltip]:hover:before, .hover-tip span.in:before, .hover-tip span.in:after {
+     border-bottom-color: #546e7a;
+ }
+ /* --- Button --- */
+ input[type='submit'].button, input[type='button'], .onoffswitch-switch, a.button.button-upgrade, a.button.button-update-options, a.button, #form-finalize button {
+    background-color: #26a69a;
+    color:#fff;
+ }    
+ .grid-responsive .choose, .onoffswitch-switch, .updown-button, button.submit, .grid-selector-list li > button.active {
+    background-color: #26a69a;
+ }
+ button.submit {
+    width: 100%;
+ } 
+ a.button.button-terminate, button.button.button-terminate.submit {
+    color: #fff;
+    background-color:#e57373;
+ }
+ .subscription-actions > li {
+     margin-right: auto;
+     margin-left: auto;
+ }
+ a#btn-refresh {
+     color: #546e7a;
+     background: transparent;
+     z-index: 2;
+ }
+ /* --- Form --- */
+ .widget.form .textbox:hover, .widget.form .textbox:focus {
+    border-color:#26a69a;
+ }
+ .widget.form .form-label.focused {
+    color: #26a69a;
+ }
+ /* --- Payment form --- */
+ #page-ForSubscription #page-header, .page-subscribe .widget.title, .page-subscribe .scheme-prices h4, .page-subscribe h3, .scheme-price-line-subtotal, .scheme-price-line.scheme-price-line-tax {
+    display:none;
+ }
+ .page-subscribe {
+     margin-top: 20px;
+ }
+ .page-subscribe .widget.form > .widget-mid > .widget-in {
+    padding: 20px;
+ }
+ .scheme-price-line-totaldue {
+     background-color: #fff;
+ }
+ .scheme-price-line label {
+     width: 100%;
+     display: inline-block;
+     font-size: 24px;
+     font-weight: 100;
+     text-align: center;
+     color: #546e7a;
+ }
+ .scheme-price-line > span.amount {
+     width: 100%;
+     font-size: 30px;
+     font-weight: 600;
+     text-align: center;
+     padding: 10px 0 0 0;
+     color: #546e7a;
+ }
+ .scheme-price-detail button {
+     border-width: 1px;
+ }
+ .img-payment-type {
+     max-width: 200px;
+ }
+ .scheme-price-period {
+     color: red;
+ }
+ .form-permission-after {
+     margin-top: 0;
+ }
+ .form-permission-line.line-validate {
+     margin-bottom: 0;
+ }
+ form.form-post-permission {
+     max-width: 320px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .form-permission-line {
+     min-width: 0;
+ }
+ .form-permission-card-cvv {
+     width: 100px;
+     margin-left: 10px;
+ }
+ .form-permission-card-cvv label.no-data .hover-tip {
+     margin-left: 50px;
+ }
+ /* --- Customer Portal --- */
+ .feature-extra-container, .included, .list-subscription-content {
+     display:none !important;
+ }
+ .widget.customer-care h4 {
+   text-align: center;
+ }
+ 
+ /* Hide Address Line 2 */
+ #form-addressbilling > div.form-address > label:nth-child(9) {
+     display: none;
+ }
+ #AddressLine2 {
+     display: none;
+ }

